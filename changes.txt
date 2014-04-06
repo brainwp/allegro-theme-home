@@ -1,0 +1,71 @@
+Version 1.0.7
+* Initial Release
+style.css
+includes/widgets/widget-allegro-latest-posts.php
+includes/widgets/widget-allegro-latest-posts-2.php
+includes/widgets/widget-allegro-latest-posts-3.php
+includes/widgets/widget-allegro-popular-posts.php
+includes/widgets/widget-allegro-popular-posts-2.php
+functions/other.php
+functions/allegro-menu.php
+
+Version 1.0.6
+* Initial Release
+style.css
+css/responsive/
+css/shortcode.css
+
+Version 1.0.5
+* Initial Release
+style.css
+
+Version 1.0.4
+* Initial Release
+style.css
+functions.php
+includes/admin/functions/jquery-css-include.php
+css/admin/main-stylesheet.css
+css/admin/safari.css
+css/admin/main-responsive.css
+
+Version 1.0.3
+* Initial Release
+style.css
+css/main-stylesheet.css
+css/responsive/
+css/admin/main-stylesheet.css
+css/admin/main-responsive.css
+css/admin/post.css
+includes/lib/plugins/js_composer.zip
+includes/admin/functions/jquery-css-include.php
+includes/admin/functions/general.php
+images/control-panel-images/logo-orangethemes-2.png
+js/admin/scripts.js
+
+
+Version 1.0.2
+* Initial Release
+includes/admin/functions/jquery-css-include.php
+includes/admin/style.php
+includes/top.php
+functions/homepage-blocks.php
+css/main-stylesheet.css
+css/dynamic-css.php
+css/admin/main-stylesheet.css
+css/responsive/ipad.css
+css/responsive/phone.css
+js/theme-scripts.js
+
+Version 1.0.1
+* Initial Release
+includes/admin/functions/jquery-css-include.php
+includes/admin/general.php
+css/responsive/desktop.css
+includes/widgets/widget-allegro-comments.php
+includes/widgets/widget-allegro-social.php
+js/scripts.js
+
+Version 1.0.0
+* Initial Release
+
+
