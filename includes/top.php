@@ -206,46 +206,10 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 							<div class="ad-banner">
 							
-							<div class="banner left"><? include($_SERVER["DOCUMENT_ROOT"].'/_ad/topo-superbanner.php'); ?></td>
+							<div class="banner left"><?php include($_SERVER["DOCUMENT_ROOT"].'/_ad/topo-superbanner.php'); ?></td>
 										<td width="200"> </div>
-										<div class="main-sidebar right"><? include($_SERVER["DOCUMENT_ROOT"].'/_ad/topo-button.php'); ?></div>
+										<div class="main-sidebar right"><?php include($_SERVER["DOCUMENT_ROOT"].'/_ad/topo-button.php'); ?></div>
 							</div>
-					<? } ?>
-					<?php if((is_array($breakingSlider) && !empty($breakingSlider) && !in_array("slider_off",$breakingSlider)) || (is_category() && $breakingSliderCat=="on")) { ?>
-						<?php
-							if(is_category()) {
-								$catId = get_cat_id( single_cat_title("",false) );
-								$category_in = $catId;
-
-								//custom colors
-								$titleColor = ot_title_color($catId, "category", false);
-							} else {
-								$category_in = $breakingSlider;
-							}
-
-							$args=array(
-								'category__in' => $category_in,
-								'posts_per_page' => 6,
-								'order'	=> 'DESC',
-								'orderby'	=> 'date',
-								'meta_key'	=> THEME_NAME.'_breaking_post',
-								'meta_value'	=> 'show',
-								'post_type'	=> 'post',
-								'ignore_sticky_posts '	=> 1,
-								'post_status '	=> 'publish'
-							);
-							$the_query = new WP_Query($args);
-
-						?>
-						<div class="breaking-news">
-							<span class="the-title"<?php echo (is_category()) ? ' style="background:'.$titleColor.'"' : null;?>><?php _e("Breaking News", THEME_NAME);?></span>
-							<ul>
-								<?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-								<li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
-								<?php endwhile; else: ?>
-									<li><?php  _e( 'No posts where found' , THEME_NAME);?></li>
-								<?php endif; ?>
-							</ul>
-						</div>
 					<?php } ?>
+					
 					<?php wp_reset_query();  ?>
